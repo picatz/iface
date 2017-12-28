@@ -17,7 +17,7 @@ mv isit /usr/bin/local
 ## Example Usage
 
 Get the first `default` ( non-loopback ) network interface:
-> This sort of simulates the LibPcap `lookupdev` function to get the default interface to capture packets on.
+> This sort of simulates the LibPcap [`lookupdev`](https://linux.die.net/man/3/pcap_lookupdev) function to get the default interface to capture packets on.
 
 ```
 $ iface default
