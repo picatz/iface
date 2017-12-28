@@ -16,7 +16,7 @@ mv isit /usr/bin/local
 
 ## Example Usage
 
-Get the first `default` ( non-loopback ) network interface:
+Get the first `default` ( non-[loopback](https://en.wikipedia.org/wiki/Loopback#Virtual_network_interface) ) network [interface](https://en.wikipedia.org/wiki/Network_interface):
 > This sort of simulates the LibPcap [`lookupdev`](https://linux.die.net/man/3/pcap_lookupdev) function to get the default interface to capture packets on.
 
 ```
@@ -29,7 +29,7 @@ Get all of the network interface names available on the system:
 $ iface names
 ```
 
-Get all of the network interface names available on the system with their mac addresses:
+Get all of the network interface names available on the system with their [mac addresses](https://en.wikipedia.org/wiki/MAC_address):
 
 ```
 $ iface macs 
