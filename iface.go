@@ -12,7 +12,7 @@ func main() {
 	app := cli.NewApp()
 
 	app.Name = "iface"
-	app.Version = "1.0.0"
+	app.Version = "1.0.1"
 	app.Usage = "network interface command-line utility"
 
 	app.Commands = []cli.Command{
@@ -32,7 +32,7 @@ func main() {
 		},
 		{
 			Name:  "macs",
-			Usage: "all network interfaces with their mac addresses",
+			Usage: "network interfaces with their mac addresses",
 			Action: func(c *cli.Context) error {
 				ifaces, err := net.Interfaces()
 				if err != nil {
@@ -48,7 +48,7 @@ func main() {
 		},
 		{
 			Name:  "mtus",
-			Usage: "all network interfaces with their maximum transmission unit (mtu)s",
+			Usage: "network interfaces with their maximum transmission unit (mtu)s",
 			Action: func(c *cli.Context) error {
 				ifaces, err := net.Interfaces()
 				if err != nil {
@@ -62,7 +62,7 @@ func main() {
 		},
 		{
 			Name:  "ips",
-			Usage: "show network interfaces with (local) ip addresses",
+			Usage: "network interfaces with their (local) ip addresses",
 			Action: func(c *cli.Context) error {
 				ifaces, err := net.Interfaces()
 				if err != nil {
