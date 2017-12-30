@@ -28,10 +28,16 @@ Get all of the network interface names available on the system:
 $ iface names
 ```
 
-Get all of the network interface names available on the system with their [mac addresses](https://en.wikipedia.org/wiki/MAC_address):
+Get network interface names with thier [mac addresses](https://en.wikipedia.org/wiki/MAC_address):
 
 ```
 $ iface macs 
+```
+
+Get network interface names with their [IP addresses](https://en.wikipedia.org/wiki/IP_address):
+
+```
+$ iface ips 
 ```
 
 ## Command-line Interface
@@ -44,12 +50,13 @@ USAGE:
    iface [global options] command [command options] [arguments...]
 
 VERSION:
-   1.0.0
+   1.0.1
 
 COMMANDS:
      names    all network interface names
-     macs     all network interfaces with their mac addresses
-     mtus     all network interfaces with their maximum transmission unit (mtu)s
+     macs     network interfaces with their mac addresses
+     mtus     network interfaces with their maximum transmission unit (mtu)s
+     ips      network interfaces with their (local) ip addresses
      default  the first non-loopback network interface
      help, h  Shows a list of commands or help for one command
 
@@ -57,4 +64,3 @@ GLOBAL OPTIONS:
    --help, -h     show help
    --version, -v  print the version
 ```
-
