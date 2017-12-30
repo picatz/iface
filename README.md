@@ -9,9 +9,8 @@ Until I've figured out a better solution:
 
 ```
 git clone https://github.com/picatz/iface.git
-cd isit
-go build isit.go
-mv isit /usr/bin/local
+cd iface 
+go build iface.go
 ```
 
 ## Example Usage
