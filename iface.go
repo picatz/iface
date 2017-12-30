@@ -61,6 +61,28 @@ func main() {
 			},
 		},
 		{
+			Name:  "ips",
+			Usage: "show network interfaces with (local) ip addresses",
+			Action: func(c *cli.Context) error {
+				ifaces, err := net.Interfaces()
+				if err != nil {
+					log.Fatal(err)
+					os.Exit(1)
+				}
+				for _, iface := range ifaces {
+					addrs, err := iface.Addrs()
+					if err != nil {
+						log.Fatal(err)
+						os.Exit(1)
+					}
+					for _, addr := range addrs {
+						fmt.Println(iface.Name, addr)
+					}
+				}
+				return nil
+			},
+		},
+		{
 			Name:  "default",
 			Usage: "the first non-loopback network interface",
 			Action: func(c *cli.Context) error {
