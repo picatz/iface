@@ -3,6 +3,15 @@
 
 Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're just a little too much to parse -- or you just don't want to fuss with all of that. With `iface`, you get a clean, scriptable command-line utility that's lightweight, cross-platform, and easy to learn. Learn once, user everywhere!
 
+## Supported Platforms
+
+> Thanks to [`VBaczynski`](https://github.com/VBaczynski) for helping test FreeBSD!
+
+* macOS
+* Linux 
+* Windows
+* FreeBSD 
+
 ## Build from Source
 
 Until I've figured out a better solution:
