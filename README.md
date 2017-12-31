@@ -1,7 +1,7 @@
 # iface
 > Network interface command-line utility.
 
-Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're just a little too much to parse -- or you just don't want to fuss with all of that. With `iface`, you get a clean, scriptable command-line utility that's lightweight, cross-platform, and easy to learn. 
+Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're just a little too much to parse -- or you just don't want to fuss with all of that. With `iface`, you get a clean, scriptable command-line utility that's lightweight, cross-platform, and easy to learn. Learn once, user everywhere!
 
 ## Build from Source
 
@@ -12,6 +12,12 @@ go get github.com/urfave/cli
 git clone https://github.com/picatz/iface.git
 cd iface 
 go build iface.go
+```
+
+Build `iface.exe` on macOS or Linux to run on a Windows box:
+
+```
+GOOS=windows GOARCH=386 go build iface.go
 ```
 
 ## Example Usage
