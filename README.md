@@ -8,6 +8,7 @@ Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're j
 Until I've figured out a better solution:
 
 ```
+go get github.com/urfave/cli
 git clone https://github.com/picatz/iface.git
 cd iface 
 go build iface.go
