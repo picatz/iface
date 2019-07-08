@@ -92,7 +92,8 @@ func main() {
 					log.Fatal(err)
 				}
 				for _, iface := range ifaces {
-					if iface.HardwareAddr != nil {
+					// must have mac address, FlagUp and FlagBroadcast
+					if iface.HardwareAddr != nil && iface.Flags&net.FlagUp != 0 && iface.Flags&net.FlagBroadcast != 0 {
 						fmt.Println(iface.Name)
 						break
 					}
