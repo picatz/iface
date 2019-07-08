@@ -1,16 +1,16 @@
 # iface
 > Network interface command-line utility.
 
-Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're just a little too much to parse -- or you just don't want to fuss with all of that. With `iface`, you get a clean, scriptable command-line utility that's lightweight, cross-platform, and easy to learn. Learn once, user everywhere!
+Tools like `ifconfig`, `ip` and `ipconfig` are awesome! But, sometimes they're just a little too much to parse -- or you just don't want to fuss with all of that. With `iface`, you get a clean, scriptable command-line utility that's lightweight, cross-platform, and easy to learn. Learn once, use everywhere!
 
 ## Supported Platforms
 
 > Thanks to [`VBaczynski`](https://github.com/VBaczynski) for helping test FreeBSD!
 
 * macOS
-* Linux 
+* Linux
 * Windows
-* FreeBSD 
+* FreeBSD
 
 ## Install
 
@@ -25,7 +25,7 @@ Until I've figured out a better solution:
 ```
 $ go get github.com/urfave/cli
 $ git clone https://github.com/picatz/iface.git
-$ cd iface 
+$ cd iface
 $ go build iface.go
 ```
 
@@ -53,13 +53,13 @@ $ iface names
 Get network interface names with thier [mac addresses](https://en.wikipedia.org/wiki/MAC_address):
 
 ```
-$ iface macs 
+$ iface macs
 ```
 
 Get network interface names with their [IP addresses](https://en.wikipedia.org/wiki/IP_address):
 
 ```
-$ iface ips 
+$ iface ips
 ```
 
 ## Command-line Interface
